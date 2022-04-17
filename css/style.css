@@ -1,0 +1,236 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: #f5f5f5;
+}
+.main::after {
+	content: '';
+	width: 50px;
+	height: 5px;
+	background-color: #0062d3;
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.main-heading::after {
+	content: '';
+	width: 100px;
+	height: 4px;
+	background-color: #0062d3;
+	position: absolute;
+	bottom: -20px;
+	left: 10%;
+	transform: translateX(-50%);
+}
+/* start nav */
+.home {
+	background-image: url(../images/hero-bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+}
+.home .overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+nav {
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 9999 !important;
+}
+nav .navbar-brand {
+	font-size: 28px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+nav .nav-item {
+	padding: 8px;
+}
+nav .nav-link {
+	color: #fff !important;
+	font-weight: 600;
+	font-size: 17px;
+}
+.slider .slider-caption h1 {
+	font-size: 70px !important;
+}
+/* end nav */
+
+/* start about */
+.about .about-content {
+	font-size: 1.25rem;
+	font-weight: 300;
+}
+/* end about */
+
+/* start services */
+.services .services-content span {
+	display: inline-block;
+	border-radius: 50%;
+	border: 8px solid #0078ff;
+	margin-bottom: 1rem;
+	transition: background-color 0.5s;
+}
+.services .services-content:hover span {
+	border: 8px solid #cde1f8 !important;
+	background-color: #0078ff;
+}
+.services .services-content:hover i {
+	color: white;
+}
+/* end services */
+
+/* start counter */
+.counter {
+	background-image: url(../images/counters-bg.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.counter .overlay {
+	background-color: #0078ff;
+	opacity: 0.7;
+}
+.counter span {
+	display: inline-block;
+	border-radius: 50%;
+	border: 8px solid white;
+	margin-bottom: 30px;
+}
+/* end counter */
+
+/* start portfolio */
+.portfolio .card img {
+	transition: transform 0.5s;
+}
+.portfolio .card:hover img {
+	transform: scale(1.1);
+}
+.icon-right {
+	position: absolute;
+	bottom: 10%;
+	left: 80%;
+	cursor: pointer;
+}
+
+/* end portfolio */
+
+/* start clients */
+.clients {
+	background-image: url(../images/overlay-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.clients .overlay {
+	background-color: #0078ff;
+	opacity: 0.7;
+	height: 100vh;
+}
+.carousel-indicators {
+	bottom: -20px;
+}
+.carousel-indicators button {
+	border-radius: 50% !important;
+	width: 12px !important ;
+	height: 12px !important;
+	background-color: #fff !important;
+}
+/* end clients */
+
+/* start blog */
+.blog .ancor img {
+	width: 30px;
+	height: 30px;
+}
+.item a:hover span {
+	color: #0078ff;
+	cursor: pointer;
+	transition: 0.2s;
+}
+/* end blog */
+
+/* start contact */
+.contact-us {
+	background-image: url('../images/overlay-bg.jpg');
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+	z-index: 111;
+}
+.contact-us .overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: #0078ff;
+	opacity: 0.7;
+	z-index: -1;
+}
+.contact-us .contact-form .contact-title > h3::after,
+.contact-us .contact-title > h3::after {
+	content: '';
+	width: 20%;
+	height: 3px;
+	background: #0078ff;
+	position: absolute;
+	bottom: -13px;
+	left: 0;
+}
+.contact-us .inTouch .socialIcon a span {
+	background-color: transparent;
+	width: 35px;
+	height: 35px;
+	line-height: 40px;
+	padding: 3px;
+	font-size: 1.7rem;
+	box-shadow: 0 0 0 3px #0078ff;
+	transition: all 0.7s;
+}
+.contact-us .contact-form button {
+	transition: all 0.7s;
+}
+.contact-us .inTouch .socialIcon a span:hover,
+.contact-us .contact-form button:hover {
+	color: #fff;
+	background-color: #0062d3;
+	box-shadow: 0 0 0 4px #cde1f8;
+}
+.contact-us .contact-form button:hover {
+	background-color: #3393ff;
+}
+/* end contact */
+
+/* start footer */
+footer {
+	background: #0062d3;
+}
+/* end footer */
+
+/*start Scroll top button */
+.top {
+	position: fixed;
+	background-color: #0062d3;
+	text-decoration: none;
+	width: 44px;
+	height: 44px;
+	text-align: center;
+	line-height: 44px;
+	font-size: 16px;
+	border-radius: 50%;
+	right: 15px;
+	bottom: 15px;
+	z-index: 11;
+}
+.top i {
+	color: #fff;
+}
+/*end Scroll top button */
